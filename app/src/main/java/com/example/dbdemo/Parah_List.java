@@ -25,7 +25,7 @@ public class Parah_List extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Intent intent=new Intent(getApplicationContext(), Parah_Display.class);
-                intent.putExtra("Parah_no",position); //position because positions start from 0 and Parahs start from 1
+                intent.putExtra("Parah_no",position+1); //position because positions start from 0 and Parahs start from 1
                 //intent.putExtra("image",imgs[position]);
                 startActivity(intent);
 

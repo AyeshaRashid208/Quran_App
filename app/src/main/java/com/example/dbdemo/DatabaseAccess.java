@@ -61,6 +61,20 @@ public class DatabaseAccess {
         }
         return SurahAyahs;
     }
+    public ArrayList getParahAyahs(int Parah_no)
+    {
+        c=db.rawQuery("Select ArabicText,FatehMuhammadJalandhri,DrMohsinKhan,ParaID,AyaID,SuraID from tayah where ParaID = "+Parah_no+" ORDER BY ParaID,AyaID,SuraID  ",new String[]{});
+        ArrayList<Ayah> ParahAyahs=new ArrayList<>();
+        Ayah ayahs;
+        while(c.moveToNext()){
+            String ayah=c.getString(0);
+            String urduTranslatiom=c.getString(1);
+            String englishTranslation=c.getString(2);
+            ayahs=new Ayah(ayah,urduTranslatiom,englishTranslation);
+            ParahAyahs.add(ayahs);
+        }
+        return ParahAyahs;
+    }
 
 
 }

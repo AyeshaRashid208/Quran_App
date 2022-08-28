@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/img_2"
+    android:background="@drawable/q"
     tools:context=".MainActivity">
 
 
@@ -12,7 +12,7 @@
         android:id="@+id/surah_names"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="212dp"
+        android:layout_marginTop="164dp"
         android:foregroundGravity="center_horizontal"
         android:gravity="center_horizontal|center_vertical"
         android:text="All Surahs "
