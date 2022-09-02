@@ -3,24 +3,24 @@
 
         <group android:checkableBehavior="single">
                 <item
-                    android:id="@+id/nav_book"
+                    android:id="@+id/all_surah"
 
-                    android:title="Book" />
-
-                <item
-                    android:id="@+id/nav_return"
-
-                    android:title="Return" />
+                    android:title="All Surah" />
 
                 <item
-                    android:id="@+id/nav_laptop"
+                    android:id="@+id/all_parah"
 
-                    android:title="Laptop" />
+                    android:title="All Parah" />
 
                 <item
-                    android:id="@+id/nav_voice"
+                    android:id="@+id/search_surah"
 
-                    android:title="Voice" />
+                    android:title="Search Surah" />
+
+                <item
+                    android:id="@+id/search_parah"
+
+                    android:title="Search Parah" />
 
         </group>
 
