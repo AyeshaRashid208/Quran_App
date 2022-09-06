@@ -3,6 +3,7 @@ package com.example.dbdemo;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -23,6 +24,7 @@ public class Parah_Display extends AppCompatActivity {
         databaseAccess.open();
         ayahs=findViewById(R.id.ayahs);
         List_Adapter_Ayahs listadapter=new List_Adapter_Ayahs(this,databaseAccess.getParahAyahs(Parah_no));
+ 
         ayahs.setAdapter(listadapter);
 
 
