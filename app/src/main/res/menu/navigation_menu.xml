@@ -1,30 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
-        <group android:checkableBehavior="single">
-                <item
-                    android:id="@+id/all_surah"
+<item android:title="Search" >
+        <menu >
+                <group android:checkableBehavior="single">
 
-                    android:title="All Surah" />
-
-                <item
-                    android:id="@+id/all_parah"
-
-                    android:title="All Parah" />
-
-                <item
-                    android:id="@+id/search_surah"
-
-                    android:title="Search Surah" />
-
-                <item
-                    android:id="@+id/search_parah"
-
-                    android:title="Search Parah" />
-
-        </group>
+                        <item
+                            android:id="@+id/all_surah"
+                            android:icon="@drawable/chrome_reader"
+                            android:title="All Surah"
+                            />
+                        <item
+                            android:id="@+id/all_parah"
+                            android:icon="@drawable/book"
+                            android:title="All Parah" />
+                        <item
+                            android:id="@+id/search_surah"
+                            android:icon="@drawable/laptop"
+                            android:title="Search Ayah" />
 
 
+                </group>
+        </menu>
+</item>
 
 
 

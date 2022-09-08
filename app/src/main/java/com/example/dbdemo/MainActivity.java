@@ -93,10 +93,7 @@ public class MainActivity extends AppCompatActivity {
                         startActivity(intent2);
                         break;
 
-                    case R.id.search_parah :
-                        Toast.makeText(getApplicationContext(),"Search by surah no clicked",Toast.LENGTH_LONG).show();
-                        drawerLayout.closeDrawer(GravityCompat.START);
-                        break;
+
 
 
                 }
@@ -111,23 +108,7 @@ public class MainActivity extends AppCompatActivity {
         String translation=databaseAccess.getTranslation(1);
         txt.setText(translation);*/
 
-        surah_names=findViewById(R.id.surah_names);
-        parah_names=findViewById(R.id.parah_names);
-        surah_names.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent=new Intent(MainActivity.this, Surah_List.class);
-                startActivity(intent);
-            }
-        });
 
-        parah_names.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent=new Intent(MainActivity.this, Parah_List.class);
-                startActivity(intent);
-            }
-        });
 
 
 

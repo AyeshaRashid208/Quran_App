@@ -11,10 +11,12 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:fontFamily="@font/noorehuda"
-        android:background="#55AFF6"
+
+        android:background="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:listitem="@layout/activity_list_adapter_ayahs"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
